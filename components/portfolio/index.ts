@@ -1,0 +1,9 @@
+export { NavBar } from "./navbar";
+export { Banner } from "./banner";
+export { Skills } from "./skills";
+export { Projects } from "./projects";
+export { Experience } from "./experience";
+export { Certificates } from "./certificates";
+export { Contact } from "./contact";
+export { Footer } from "./footer";
+export { ScrollProgress } from "./scroll-progress";
