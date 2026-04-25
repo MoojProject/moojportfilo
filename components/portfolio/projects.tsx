@@ -1,5 +1,6 @@
 "use client";
-
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -74,12 +75,19 @@ export function Projects() {
                          </a>
                         )}
                         {project.video && (
-                          <a  href={project.video} target="_blank" rel="noopener noreferrer"
-                           className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-                             <PlayCircle className="w-4 h-4" />
-                              Watch Demo
-                               </a>
-                              )}
+  <Dialog>
+    <DialogTrigger asChild>
+      <button className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+        <PlayCircle className="w-4 h-4" />
+        Watch Demo
+      </button>
+    </DialogTrigger>
+    <DialogContent className="max-w-3xl p-0 overflow-hidden">
+      <VisuallyHidden><DialogTitle>Demo</DialogTitle></VisuallyHidden>
+      <video src={project.video} controls autoPlay className="w-full" />
+    </DialogContent>
+  </Dialog>
+)}
                               </div>
 
 
