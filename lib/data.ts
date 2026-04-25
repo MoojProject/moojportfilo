@@ -63,12 +63,19 @@ export const SKILLS_DATA = {
 
 export const PROJECTS = [
   {
+    title: "Saudi Domestic Tourism",
+    description: "An interactive data analytics project that explores domestic tourism behavior in Saudi Arabia using official tourism indicators. Analyzes tourism trends across time, regions, spending categories, and trip purposes through visual storytelling and dashboard insights.",
+    tags: ["EDA", "Streamlit", "Python"],
+    image: "/images/saudi-tourism.png",
+    demo: "https://saudi-tourism-eda.streamlit.app",
+  },
+  {
     title: "Zameel",
     description: "A lightweight habit assistant inspired by ELIZA-style conversational approach. Helps college students reflect on their day and stay consistent with positive routines through calm, supportive dialogue.",
     tags: ["NLP", "Chatbot", "Python"],
     image: "/images/zameel.png",
-  demo: "https://zammel.streamlit.app",
-  video: "/videos/Eliza_videos.mp4",
+    demo: "https://zammel.streamlit.app",
+    video: "/videos/Eliza_videos.mp4",
   },
   {
     title: "Visualize",
