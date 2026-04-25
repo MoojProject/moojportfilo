@@ -52,6 +52,8 @@ export function Contact() {
     name: `${formData.firstName} ${formData.lastName}`,
     email: formData.email,
     message: formData.message,
+    phone: formData.phone, // ← أضف هذا
+
   },
   "c4SdqAY9g05E-DdST"
 );
