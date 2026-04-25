@@ -66,7 +66,8 @@ export const PROJECTS = [
     title: "Zameel",
     description: "A lightweight habit assistant inspired by ELIZA-style conversational approach. Helps college students reflect on their day and stay consistent with positive routines through calm, supportive dialogue.",
     tags: ["NLP", "Chatbot", "Python"],
-    image: "/images/zameel.png",
+  demo: "https://zammel.streamlit.app",
+  video: "/videos/Eliza_videos.mov",
   },
   {
     title: "Visualize",
