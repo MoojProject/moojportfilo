@@ -65,22 +65,22 @@ export function Projects() {
                       </Badge>
                     ))}
                   </div>
-<div className="flex gap-3">
-  {project.demo && (
-    <a href={project.demo} target="_blank" rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-      <ArrowUpRight className="w-4 h-4" />
-      Live Demo
-    </a>
-  )}
-  {project.video && (
-    <a href={project.video} target="_blank" rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-      <PlayCircle className="w-4 h-4" />
-      Watch Demo
-    </a>
-  )}
-</div>
+                  <div className="flex gap-3">
+                     {project.demo && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+                        <ArrowUpRight className="w-4 h-4" />
+                         Live Demo
+                         </a>
+                        )}
+                        {project.video && (
+                          <a  href={project.video} target="_blank" rel="noopener noreferrer"
+                           className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+                             <PlayCircle className="w-4 h-4" />
+                              Watch Demo
+                               </a>
+                              )}
+                              </div>
 
 
                 </CardContent>

@@ -68,7 +68,7 @@ export const PROJECTS = [
     tags: ["NLP", "Chatbot", "Python"],
     image: "/images/zameel.png",
   demo: "https://zammel.streamlit.app",
-  video: "/videos/Eliza_videos.mov",
+  video: "/videos/Eliza_videos.mp4",
   },
   {
     title: "Visualize",
