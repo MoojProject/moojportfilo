@@ -63,6 +63,13 @@ export const SKILLS_DATA = {
 
 export const PROJECTS = [
   {
+  title: "Wiqaya — Employee Attrition Prediction System",
+  description: "An ML-powered system that predicts employee attrition in the Saudi government sector using XGBoost classification and KMeans clustering. The project includes an interactive React dashboard for risk analysis, employee segmentation, and actionable HR insights.",
+  tags: ["Machine Learning", "XGBoost", "KMeans", "React"],
+  image: "/images/wiqaya.png",
+  video: "/videos/wiqaya.mov",
+},
+  {
     title: "Saudi Domestic Tourism",
     description: "An interactive data analytics project that explores domestic tourism behavior in Saudi Arabia using official tourism indicators. Analyzes tourism trends across time, regions, spending categories, and trip purposes through visual storytelling and dashboard insights.",
     tags: ["EDA", "Streamlit", "Python"],
