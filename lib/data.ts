@@ -67,7 +67,7 @@ export const PROJECTS = [
   description: "An ML-powered system that predicts employee attrition in the Saudi government sector using XGBoost classification and KMeans clustering. The project includes an interactive React dashboard for risk analysis, employee segmentation, and actionable HR insights.",
   tags: ["Machine Learning", "XGBoost", "KMeans", "React"],
   image: "/images/wiqaya.png",
-  video: "/videos/wiqaya.mov",
+  video: "/videos/wiqaya.mov" ,
 },
   {
     title: "Saudi Domestic Tourism",
