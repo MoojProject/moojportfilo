@@ -63,6 +63,13 @@ export const SKILLS_DATA = {
 
 export const PROJECTS = [
   {
+  title: "Raqeeb — Stolen License Plate Detection System",
+  description: "An intelligent Computer Vision system designed to detect stolen license plates and verify whether a plate belongs to the correct vehicle. The system uses object detection, Vision-Language Models, and vehicle classification to identify suspicious or mismatched vehicles through smart database verification.",
+  tags: ["Computer Vision", "YOLO", "OCR", "Python", "AI"],
+  image: "/images/raqeeb.png",
+  video: "/videos/raqeeb.mov"
+},
+  {
   title: "Wiqaya — Employee Attrition Prediction System",
   description: "An ML-powered system that predicts employee attrition in the Saudi government sector using XGBoost classification and KMeans clustering. The project includes an interactive React dashboard for risk analysis, employee segmentation, and actionable HR insights.",
   tags: ["Machine Learning", "XGBoost", "KMeans", "React"],
