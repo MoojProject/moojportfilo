@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,13 +45,21 @@ export function Contact() {
     setStatus({ type: null, message: "" });
 
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await emailjs.send(
+  "service_5k3be8b",
+  "template_fm6ayao",
+  {
+    name: `${formData.firstName} ${formData.lastName}`,
+    email: formData.email,
+    message: formData.message,
+  },
+  "c4SdqAY9g05E-DdST"
+);
 
-    // Since there's no backend, show a success message with mailto link
-    setStatus({
-      type: "success",
-      message: "Thank you! You can also reach me directly via email.",
-    });
+setStatus({
+  type: "success",
+  message: "Message sent! I'll get back to you soon.",
+});
     setFormData(initialFormState);
     setIsSubmitting(false);
   };
